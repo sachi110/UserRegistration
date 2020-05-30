@@ -19,5 +19,8 @@ mysql-standalone
    docker conatiner rm -f  container
 9 . see the docker logs
    docker container logs containername/id
+10. to restart the docker 
+ https://docs.docker.com/config/daemon/systemd/
+ 
 
 
