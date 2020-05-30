@@ -1,1 +1,23 @@
-"# UserRegistration" 
+"# UserRegistration"
+1. pull the image of mysql
+   pull image mysql:tag(version)
+2.build the image
+   docker build -t user-mysql .
+
+3.this is use from run the mysql image
+   docker run -d -p 8089:8089 --name user-mysql --link mysql-standalone:mysql user-mysql
+4.this is use for run the spring boot image
+   docker run --name mysql-standalone -e MYSQL_USER=root -e MYSQL_DATABASE=test -e MYSQL_ROOT_PASSWORD=@Sachi110 -d mysql:5.6 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+mysql-standalone
+5. see the all conatiner
+   docker container ls
+6. see the all image
+   docker iameg ls
+7. remove the all images
+   docker image rm -f imagename/imageid
+8. remove container
+   docker conatiner rm -f  container
+9 . see the docker logs
+   docker container logs containername/id
+
+
