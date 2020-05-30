@@ -1,4 +1,4 @@
-"# UserRegistration"
+"# UserRegistration" In this project I used two databaes (H2/MySQL) 
 1. pull the image of mysql
    pull image mysql:tag(version)
 2.build the image
@@ -21,6 +21,9 @@ mysql-standalone
    docker container logs containername/id
 10. to restart the docker 
  https://docs.docker.com/config/daemon/systemd/
+11. to connect the mysql connector and mysql console
+  docker exec -it mysql-standalone mysql -uroot -p     where  mysql-standalone  is container name
+
  
 
 
